@@ -1,0 +1,114 @@
+.project-card {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 22px;
+  box-shadow: 0 4px 24px rgba(171, 178, 191, 0.13);
+  padding: 2.5rem 2.2rem;
+  margin: 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  backdrop-filter: blur(8px);
+}
+.project-card:hover {
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+.project-card-img-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #232b4d;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.project-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(171, 178, 191, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border-radius: 12px;
+  opacity: 1;
+  animation: fadeInOverlay 0.3s;
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.project-card-icon-animate {
+  animation: projectIconBounce 0.7s;
+  color: #fbc2eb !important;
+  filter: drop-shadow(0 0 8px #a6c1ee88);
+}
+
+@keyframes projectIconBounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.25) rotate(-10deg); }
+  60% { transform: scale(0.95) rotate(8deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  display: block;
+}
+.project-card:hover .project-card-img-container {
+  box-shadow: 0 6px 24px rgba(44, 62, 80, 0.18);
+}
+.project-card:hover img {
+  transform: scale(1.04);
+}
+.project-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.project-card-header h2 {
+  color: #3a3a4f;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0 0.5rem;
+}
+.project-card-icon {
+  color: #a6c1ee;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+.project-card-content {
+  color: #6d6d8f;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+}
+.project-card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fff;
+  background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(171, 178, 191, 0.10);
+}
+.project-card-link:hover {
+  background: linear-gradient(90deg, #a6c1ee 0%, #fbc2eb 100%);
+} 

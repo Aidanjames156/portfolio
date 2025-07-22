@@ -1,0 +1,81 @@
+header {
+  background: linear-gradient(270deg, #fbc2eb, #a6c1ee, #fbc2eb);
+  background-size: 200% 200%;
+  animation: headerGradientMove 6s ease-in-out infinite;
+  color: #3a3a4f;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 8px 32px rgba(171, 178, 191, 0.18);
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-bottom: 2.5rem;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes headerGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+header h1, header h2, header h3, header p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 16px #fff8, 0 1px 2px #a6c1ee;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 10px;
+  background: linear-gradient(90deg, #a6c1ee 0%, #fbc2eb 100%);
+  border-radius: 0 0 16px 16px;
+  opacity: 0.8;
+  filter: blur(4px);
+  z-index: 2;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.header-icon {
+  font-size: 2.7rem;
+  color: #a6c1ee;
+  filter: drop-shadow(0 0 8px #fbc2eb88);
+  animation: spinStar 2.5s linear infinite;
+}
+
+@keyframes spinStar {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.header-subtitle {
+  margin-top: 1.2rem;
+  font-size: 1.25rem;
+  color: #6d6d8f;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 8px #fff6;
+} 
