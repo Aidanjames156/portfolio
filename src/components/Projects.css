@@ -4,6 +4,8 @@
   font-size: 2rem;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(24, 31, 58, 0.25);
+  position: relative;
+  z-index: 2;
 }
 
 .projects-section {
@@ -14,4 +16,6 @@
   background: linear-gradient(120deg, #a1c4fd 25%, #c2e9fb 75%);
   box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
   padding: 2.5rem 2rem;
+  position: relative;
+  z-index: 1;
 } 

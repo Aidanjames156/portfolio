@@ -1,5 +1,4 @@
 import React from 'react';
-import { AiFillStar } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import SpinningCube from './SpinningCube';
@@ -13,7 +12,7 @@ function Header() {
       transition={{ duration: 1, ease: 'easeOut' }}
     >
       <div className="header-content">
-        <AiFillStar className="header-icon" />
+        
         <h1>Aidan James</h1>
       </div>
       <p className="header-subtitle">

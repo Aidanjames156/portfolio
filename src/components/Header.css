@@ -26,7 +26,7 @@ header::before {
   position: absolute;
   inset: 0;
   background: rgba(255,255,255,0.18);
-  backdrop-filter: blur(6px);
+  
   z-index: 1;
   pointer-events: none;
 }
@@ -48,7 +48,7 @@ header::after {
   background: linear-gradient(90deg, #a6c1ee 0%, #fbc2eb 100%);
   border-radius: 0 0 16px 16px;
   opacity: 0.8;
-  filter: blur(4px);
+  
   z-index: 2;
 }
 
@@ -57,18 +57,6 @@ header::after {
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-}
-
-.header-icon {
-  font-size: 2.7rem;
-  color: #a6c1ee;
-  filter: drop-shadow(0 0 8px #fbc2eb88);
-  animation: spinStar 2.5s linear infinite;
-}
-
-@keyframes spinStar {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 
 .header-subtitle {

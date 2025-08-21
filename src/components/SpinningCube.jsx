@@ -27,4 +27,4 @@ export default function SpinningCube() {
       </Canvas>
     </div>
   );
-} 
+}

@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .cert-card {
@@ -22,6 +24,7 @@
   position: relative;
   justify-content: center;
   backdrop-filter: blur(8px);
+  z-index: 2;
 }
 .cert-card > div {
   text-align: center;
@@ -75,4 +78,7 @@
     margin-bottom: 1rem;
     text-align: center;
     font-size: 2rem;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(24, 31, 58, 0.25);
 }

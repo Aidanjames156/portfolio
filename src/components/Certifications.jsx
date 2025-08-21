@@ -11,7 +11,7 @@ function Certifications() {
           <span className="cert-icon"><FaCloud /></span>
           <div>
             <h3>Microsoft Certified: Azure Administrator Associate <span className="cert-badge">AZ-104</span></h3>
-            <p>Issued by Microsoft</p>
+            <p>In Progress</p>
           </div>
         </div>
       </div>
