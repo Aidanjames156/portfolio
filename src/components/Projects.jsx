@@ -61,7 +61,7 @@ function Projects() {
             title="JukeBox"
             imgSrc={`${process.env.PUBLIC_URL}/jukebox.png`}
             alt="JukeBox Screenshot"
-            description="A web-based music album search and review app using the Spotify API and Node.js."
+            description="A web-based music discovery and review app using the Spotify API and Node.js."
           />
         </motion.div>
       </div>
